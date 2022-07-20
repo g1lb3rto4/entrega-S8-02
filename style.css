@@ -1,0 +1,180 @@
+html, body, figure, header,img, div, section, article, input, 
+button, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a,form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color:#f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    width: 1800px;
+    margin: 0 auto;
+    color: black;
+}
+
+.Cabecalho{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(238, 238, 238);
+    align-items: center;
+    padding: 0 30px;
+}
+
+.titulo{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.menu_navegacao_listas{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+section{
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+img{
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.principal{
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: end;
+}
+
+.pesquisa input{
+    height: 40px;
+    padding: 10px;
+    width: 250px;
+    border: solid 1px rgb(217, 217, 217);
+}
+
+.pesquisa button{
+    border: solid 1px rgb(217, 217, 217);
+    background: white;
+    padding: 0 10px;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul li{
+    max-width: 300px;
+    background-color: white;
+    min-height: 280px;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+ul li p{
+    margin-top: 10px;
+}
+
+ul li span{
+    margin: 10px;
+    display: block;
+}
+
+ul li button{
+    background-color: blue;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.carrinho{
+   width: 25%;
+}
+
+.carrinho ul{
+    background-color: white;
+    height: 370px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.carrinho ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    min-height: initial;
+    border: solid rgb(217, 217, 217) 1px;
+    max-width: 100%;
+}
+
+.carrinho ul li img{
+    max-width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.carrinho ul li p{
+  width: 100px;
+}
+
+.carrinho ul li span{
+   font-size: 0;
+}
+
+.carrinho ul li button{
+    background-color: blue;
+    padding:0;
+    position: absolute;
+    right: 10px;
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    top: -5px;
+    color: transparent;
+    line-height: 29px;
+}
+.carrinho ul li button::before{
+    content: "X";
+    display: block;
+    color:white;
+}
+
+.informacoes_carrinho{
+    background-color: white;
+    padding: 10px;
+    min-height: 220px;
+}
+.informacoes_carrinho p{
+    margin-bottom: 10px;
+} 
+.informacoes_carrinho button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    float: right;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 40px;
+} 
+
