@@ -25,9 +25,8 @@ function criarCardProduto(produto){
     let lista = document.createElement("li")
 
     let categoria = produto.categoria
-    let Categoria = document.createElement("span")
+    let Categoria = document.createElement("button")
     Categoria.innerText = categoria
-    Categoria.className = "layoutCategoria"
     
     let nome = produto.nome
     let Nome = document.createElement("h2")
@@ -39,8 +38,7 @@ function criarCardProduto(produto){
 
     let preco = produto.preco
     let Preco = document.createElement("p")
-    Preco.innerText = `R$ ${preco}`
-    Preco.className = "precoSoma"
+    Preco.innerText = `R$ ${preco}`.replace(".",",")
  
     let imagem = document.createElement("img")
     let img = produto.img
@@ -94,36 +92,9 @@ function adicionar(produto){
     }
 }
 
-const botao = document.querySelectorAll(".produtos li button")
-const quant = document.querySelector(".quantidade")
+carrinho.addEventListener("click", concluirTarefa)
 
-let contador = 0
-
-for(let i = 0;i < botao.length;i++){
-    botao[i].addEventListener("click",function(){
-        contador++
-        quant.innerText = contador
-    })
-}
-/////////
-const array = document.querySelectorAll(".carrinho ul li .preco")
-const valor = document.querySelector(".total")
-
-let total = 0
-function soma(array){
-    for (let i = 0; i < array.length; i++){
-        botao[i].addEventListener("click",function(){
-        total += array[i].preco -1
-        total++
-        valor.innerText = total 
-      })
-    }
-  }
- soma(produtos)
-
-carrinho.addEventListener("click", removerProduto)
-
-function removerProduto(event){
+function concluirTarefa(event){
 
     let botaoRemover = event.target
 
@@ -131,15 +102,11 @@ function removerProduto(event){
 
         let id = botaoRemover.id
 
-        let index = carrinhoCompras.findIndex((element) => element.id == id)
-
-        contador--
-        quant.innerText = contador
-
-        carrinhoCompras.splice(index,1)
+        carrinhoCompras[id].status = true
+        
+        carrinhoCompras.splice(id,1)
 
         listarProdutos(carrinhoCompras,carrinho)
-
     }
 }
 
@@ -174,13 +141,4 @@ function busca(Pesquisa){
     }
     return buscarItens
 }
-
-let finalizar = document.querySelector(".finalizar")
-
-finalizar.addEventListener("click", function () {
-    location.reload();
-  });
-  
-
-
 

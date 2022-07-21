@@ -21,7 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     height: 120px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(208, 208, 208);
     border: 1px solid rgb(238, 238, 238);
     align-items: center;
     padding: 0 30px;
@@ -81,13 +81,23 @@ img{
     justify-content: space-between;
 }
 
+.layoutCategoria{
+width: 100px;
+height:25px;
+border-radius: 7px;
+background-color: blue;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 ul li{
     max-width: 300px;
     background-color: white;
     min-height: 280px;
     margin: 20px;
     padding: 10px;
-    width: 100%;
     position: relative;
 }
 
@@ -115,8 +125,10 @@ ul li button{
 .carrinho ul{
     background-color: white;
     height: 370px;
+    width: 400px;
     padding: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .carrinho ul li{
     display: flex;
@@ -140,6 +152,8 @@ ul li button{
 
 .carrinho ul li span{
    font-size: 0;
+   width: 0;
+   height: 0;
 }
 
 .carrinho ul li button{
@@ -164,6 +178,7 @@ ul li button{
     background-color: white;
     padding: 10px;
     min-height: 220px;
+    width: 400px;
 }
 .informacoes_carrinho p{
     margin-bottom: 10px;

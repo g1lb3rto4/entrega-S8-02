@@ -1,44 +1,44 @@
 const produtos = [
     {
-        id:0,
+        id:1,
         nome:"Camisetas Preta",
-        preco:99.99,
+        preco:100,
         categoria: "Camisetas",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/camiseta_preta.svg"
     },
 
     {
-        id:1,
+        id:2,
         nome:"Camisetas Branca",
-        preco:99.99,
+        preco:100,
         categoria: "Camisetas",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/camiseta_branca.svg"
     },
 
     {
-        id:2,
+        id:3,
         nome:"Gorros",
-        preco:29.99,
+        preco:30,
         categoria: "Acessorios",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/gorro.svg"
     },
 
     {
-        id:3,
+        id:4,
         nome:"Mascaras",
-        preco:7.99,
+        preco:8,
         categoria:"Acessorios",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/mascara.svg"
     },
 
     {
-        id:4,
+        id:5,
         nome:"Jaquetas",
-        preco:299.99,
+        preco:300,
         categoria: "Jaquetas",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/jaqueta.svg"
@@ -46,9 +46,9 @@ const produtos = [
 
     
     {
-        id:5,
+        id:6,
         nome:"Corta-vento",
-        preco:139.99,
+        preco:140,
         categoria:"Jaquetas",
         descricao:"Feita com tecnologia têxtil: não esquenta, não precisa passar e não desbota com o tempo",
         img:"./img/moletom.svg"
